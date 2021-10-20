@@ -7,6 +7,10 @@
 # 26 is never reached as the last iteration stops at 23.
 # end = is used to create place holders between numbers and
 # place them on one line.
-x = range(11, 26, 3)
-for n in x:
-  print(n, end= " ")
+
+def main():
+    x = range(11, 26, 3)
+    for n in x:
+        print(n, end= " ")
+
+main()
