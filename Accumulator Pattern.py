@@ -21,4 +21,4 @@ def main():
     # print the total
     print("The total sums for numbers 1 through 142 is: ", total,"\n")
 
-main()
+main() 
