@@ -15,14 +15,22 @@ def main():
     #holds the sum of the integers entered
     total  = 0
 
+    # use a while loop, while its true the program will continue running until the loop is broken
     while True:
+
+        # ask the user to input an integer
         number = int(input("Enter a number: "))
 
+        # if statement to check the number is in the range 
         if(number < -101) or (number > 101):
-            break
 
+            #break the loop if a number outside the range is entered
+            break
+        
+        # add the numbers added to the accumilator
         total += number
 
+    # print total from all the numbers entered
     print("Total: ", total)
     
 main()
