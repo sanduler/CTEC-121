@@ -29,22 +29,35 @@ def main():
 
     # initial lego
     Lego = graphics.Rectangle(graphics.Point(20, 200),graphics.Point(300,100))
+    # fills the lego
     Lego.setFill(graphics.color_rgb(r,g,b))
+    # creates an outline around the block of the lego
     Lego.setOutline("Black")
+    # sets the width of the line
     Lego.setWidth(3)
     Lego.draw(win)
 
+    # creates the top point of the lego 
     Top = graphics.Rectangle(graphics.Point(40, 90),graphics.Point(60,100))
     Top.setOutline("Black")
+    # sets the color of the top of the lego
     Top.setFill(graphics.color_rgb(r,g,b))
+    # sets the width of the line of the top of the lego
     Top.setWidth(3)
 
+    # create a for loop that will create 3 more pieces of the top of the lego
+    # set the inital x location of 0
     xLocation = 0
+    # use the for loop to loop the clone of the top of the lego
     for x in range(1, 6):
         firstTop = Top.clone()
+        # starts at the x location of 0
         firstTop.move(xLocation,0)
+        # creates a color based on the random colors found above
         firstTop.setFill(graphics.color_rgb(r,g,b))
+        # draws the a top of the lego in the every interfval of the for loop
         firstTop.draw(win)
+        # increments the x location 55 
         xLocation = xLocation + 55
 
     #random color
