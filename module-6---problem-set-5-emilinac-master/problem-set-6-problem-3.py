@@ -20,7 +20,7 @@ import random
 
 def main():
     # create the graphics window
-    win = graphics.GraphWin('Problem 3 - Lego', 800, 650)
+    win = graphics.GraphWin('Problem 3 - Lego', 725, 650)
 
     #random color
     r =random.randint(0,255)
