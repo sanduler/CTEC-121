@@ -57,52 +57,85 @@ def main():
     Lego2.setFill(graphics.color_rgb(r,g,b))
     Lego2.draw(win)
 
-
     xLocation = 400
-
     for x in range(1, 6):
-        secondTop = Top.clone()
-        secondTop.move(xLocation,0)
-        secondTop.setFill(graphics.color_rgb(r,g,b))
-        secondTop.draw(win)
+        firstTop = Top.clone()
+        firstTop.move(xLocation,0)
+        firstTop.setFill(graphics.color_rgb(r,g,b))
+        firstTop.draw(win)
         xLocation = xLocation + 55
 
+    #random color
+    r =random.randint(0,255)
+    g =random.randint(0,255)
+    b =random.randint(0,255)
 
-    i = 1
-    moveY = 200
+    Lego3 = Lego.clone()
+    Lego3.move(0,200)
+    Lego3.setFill(graphics.color_rgb(r,g,b))
+    Lego3.draw(win)
 
-    # create 5 more cubes
- 
-    while i < 3: 
-        #random color
-        r =random.randint(0,255)
-        g =random.randint(0,255)
-        b =random.randint(0,255)
+    xLocation = 0
+    for x in range(1, 6):
+        firstTop = Top.clone()
+        firstTop.move(xLocation,200)
+        firstTop.setFill(graphics.color_rgb(r,g,b))
+        firstTop.draw(win)
+        xLocation = xLocation + 55
 
-        LegoCloneY = Lego.clone()
-        LegoCloneY.move(0,moveY)
-        LegoCloneY.setFill(graphics.color_rgb(r,g,b))
-        LegoCloneY.draw(win)
+    #random color
+    r =random.randint(0,255)
+    g =random.randint(0,255)
+    b =random.randint(0,255)
 
-        b = 1
-        moveX = 400
-        while b < 3:
-            LegoCloneX = LegoCloneY.clone()
-            LegoCloneX.move(moveX,0)
-            LegoCloneX.setFill(graphics.color_rgb(r,g,b))
-            LegoCloneX.draw(win)
-            b = b + 1
-            
-            xLocation = 0
-            for x in range(1, 6):
-                firstTop = Top.clone()
-                firstTop.move(xLocation,200)
-                firstTop.draw(win)
-                firstTop.setFill(graphics.color_rgb(r,g,b))
-                xLocation = xLocation + 55
-            
-        b = b + 1
-        moveY = moveY + 200
+    Lego4 = Lego.clone()
+    Lego4.move(400,200)
+    Lego4.setFill(graphics.color_rgb(r,g,b))
+    Lego4.draw(win)
+
+    xLocation = 400
+    for x in range(1, 6):
+        firstTop = Top.clone()
+        firstTop.move(xLocation,200)
+        firstTop.setFill(graphics.color_rgb(r,g,b))
+        firstTop.draw(win)
+        xLocation = xLocation + 55
+
+    #random color
+    r =random.randint(0,255)
+    g =random.randint(0,255)
+    b =random.randint(0,255)
+
+    Lego3 = Lego.clone()
+    Lego3.move(0,400)
+    Lego3.setFill(graphics.color_rgb(r,g,b))
+    Lego3.draw(win)
+
+    xLocation = 0
+    for x in range(1, 6):
+        firstTop = Top.clone()
+        firstTop.move(xLocation,400)
+        firstTop.setFill(graphics.color_rgb(r,g,b))
+        firstTop.draw(win)
+        xLocation = xLocation + 55
+
+    #random color
+    r =random.randint(0,255)
+    g =random.randint(0,255)
+    b =random.randint(0,255)
+
+    Lego4 = Lego.clone()
+    Lego4.move(400,400)
+    Lego4.setFill(graphics.color_rgb(r,g,b))
+    Lego4.draw(win)
+
+    xLocation = 400
+    for x in range(1, 6):
+        firstTop = Top.clone()
+        firstTop.move(xLocation,400)
+        firstTop.setFill(graphics.color_rgb(r,g,b))
+        firstTop.draw(win)
+        xLocation = xLocation + 55    
 
     # close the program
     input('Press enter to quit the program ')
