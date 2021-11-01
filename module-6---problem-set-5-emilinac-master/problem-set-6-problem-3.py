@@ -60,16 +60,18 @@ def main():
         # increments the x location 55 
         xLocation = xLocation + 55
 
-    #random color
+    #randomzies the colors for a new block 
     r =random.randint(0,255)
     g =random.randint(0,255)
     b =random.randint(0,255)
 
+    # clone the lego 
     Lego2 = Lego.clone()
     Lego2.move(400,0)
     Lego2.setFill(graphics.color_rgb(r,g,b))
     Lego2.draw(win)
 
+    # repeat the above steps just a diffrent location for block 2
     xLocation = 400
     for x in range(1, 6):
         firstTop = Top.clone()
@@ -78,7 +80,7 @@ def main():
         firstTop.draw(win)
         xLocation = xLocation + 55
 
-    #random color
+    #randomzies the colors for a new block 
     r =random.randint(0,255)
     g =random.randint(0,255)
     b =random.randint(0,255)
@@ -88,6 +90,7 @@ def main():
     Lego3.setFill(graphics.color_rgb(r,g,b))
     Lego3.draw(win)
 
+    # repeat the above steps just a diffrent location for block #3
     xLocation = 0
     for x in range(1, 6):
         firstTop = Top.clone()
@@ -96,7 +99,7 @@ def main():
         firstTop.draw(win)
         xLocation = xLocation + 55
 
-    #random color
+    #randomzies the colors for a new block #4
     r =random.randint(0,255)
     g =random.randint(0,255)
     b =random.randint(0,255)
@@ -106,6 +109,7 @@ def main():
     Lego4.setFill(graphics.color_rgb(r,g,b))
     Lego4.draw(win)
 
+    # repeat the above steps just a diffrent location for block 4
     xLocation = 400
     for x in range(1, 6):
         firstTop = Top.clone()
@@ -114,16 +118,17 @@ def main():
         firstTop.draw(win)
         xLocation = xLocation + 55
 
-    #random color
+    #randomzies the colors for a new block 
     r =random.randint(0,255)
     g =random.randint(0,255)
     b =random.randint(0,255)
 
-    Lego3 = Lego.clone()
-    Lego3.move(0,400)
-    Lego3.setFill(graphics.color_rgb(r,g,b))
-    Lego3.draw(win)
+    Lego5 = Lego.clone()
+    Lego5.move(0,400)
+    Lego5.setFill(graphics.color_rgb(r,g,b))
+    Lego5.draw(win)
 
+    # repeat the above steps just a diffrent location for block 5
     xLocation = 0
     for x in range(1, 6):
         firstTop = Top.clone()
@@ -132,16 +137,17 @@ def main():
         firstTop.draw(win)
         xLocation = xLocation + 55
 
-    #random color
+    #randomzies the colors for a new block 
     r =random.randint(0,255)
     g =random.randint(0,255)
     b =random.randint(0,255)
 
-    Lego4 = Lego.clone()
-    Lego4.move(400,400)
-    Lego4.setFill(graphics.color_rgb(r,g,b))
-    Lego4.draw(win)
+    Lego6 = Lego.clone()
+    Lego6.move(400,400)
+    Lego6.setFill(graphics.color_rgb(r,g,b))
+    Lego6.draw(win)
 
+    # repeat the above steps just a diffrent location for block 6
     xLocation = 400
     for x in range(1, 6):
         firstTop = Top.clone()
